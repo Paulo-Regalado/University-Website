@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CHECKOUT</title>
+        <link rel="stylesheet" href="cart.css">
+         <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+    <!-- END OF FONTS -->
+    </head>
+    <body>
+        <header>
+            <img class="logo" src=".\img\BHS Canteen Logo.png" alt="logo" onclick="location.href = 'Login.html';">
+            <nav>
+                <ul class="nav_links">
+                    <li><a href="index.html#home">Home</a></li>
+                    <li><a href="index.html#menu">Menu</a></li>
+                    <li><a href="index.html#about-us">About</a></li>
+                    <li><a href="index.html#contacts">Contacts</a></li>
+                </ul>
+            </nav>
+                <ul class="nav_links" id="nav_buttons">
+                    <li><a class="order" href="Login.html"><button><img src=".\img\Add to cart.png" class="nav_image"></button></a></li>
+                    <li><a class="login" href="#">
+
+                        <div class="dropdown">
+                           <button class="dropbtn"><img src=".\img\AccountHomePage.png" class="nav_image"></button>
+                            </button>
+                            <div class="dropdown-content" id="list">
+                                <a href="#">Profile</a>
+                                <a href="#">Orders</a>
+                                <a href="#">Logout</a>
+                            </div>
+                          </div> 
+                        </div>
+                    
+                    </a></li>
+                </ul>
+        </header>
+        <section class="cart">
+
+            <div class="cart-head">
+                <h1>USER'S CART</h1>
+                <button class="remove-all btn">REMOVE ALL</button>
+            </div>
+
+            <div class="cart-container">
+            
+                <div class="cart-items">
+    
+                    <div class="cart-item">
+                        <img src="./img/BEVERAGES/1.png" class="cart-img">
+                        <div class="cart-content">
+                            <div class="full-width">
+                                <h2 class="cart-item-name">CHOCOLATE DRINK</h2>
+                            <span class="yellow-font">PRICE</span><span class="item-info"> 20.00</span>
+                            </div>
+                            <div class="full-width">
+                                <span class="yellow-font">QUANTITY</span><span class="item-info">1</span>
+                            </div>
+                            <div class="full-width">
+                                <span class="yellow-font">SUBTOTAL</span><span class="item-info">20.00</span>
+                            </div>
+                            <button class="remove btn">REMOVE</button>
+                        </div>
+    
+                    </div>
+    
+                </div>
+
+                <div class="cart-checkout">
+                    <div class="cart-checkout-content">
+                        <span class="yellow-font">TOTAL</span><span class="item-info">20.00</span>
+                        <div class="full-width">
+                            <a href="transaction.html"><button class="proceed-checkout btn">PROCEED TO CHECKOUT</button></a>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+    <script src="script.js"></script>
+    </body>
+</html>
